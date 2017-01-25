@@ -1,5 +1,5 @@
 // JavaScript Document
-var pokeball = 0;
-	function poke_clicker() {
-		pokeball++;
-	}
+var i = 0;
+function buttonClick() {
+	document.getElementById('inc').value = ++i;
+}
