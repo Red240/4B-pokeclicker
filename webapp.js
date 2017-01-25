@@ -3,7 +3,7 @@
 
 var pokeball=0;
 
-function poke-clicker() {
+function poke_clicker() {
 	
 	pokeball++;
 	document.getElementById("output").innerHTML = pokeball;
