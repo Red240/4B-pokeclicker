@@ -13,9 +13,21 @@
 
 <body>
 <!--Add your HTML here-->
-<input type="button" value="test" onClick=""id="pokeball">
+<script type="text/javascript">
+var i = 0;
+function buttonClick() {
+	document.getElementById('inc').value = ++i;
+}
+</script>
+<button onClick="buttonClick()">Test</button>
+<input type="text" id="inc" value="0">
+<!--
+//Past code
+<a href="Javascript:poke_clicker()"><input type="button" value="test" onClick="" id="pokeball"></a>
+<p id="output"></p>
 <script type="text/javascript">
 
 </script>
+-->
 </body>
 </html>
