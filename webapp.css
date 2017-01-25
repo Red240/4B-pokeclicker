@@ -1,7 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
+.box{
+	height: 360px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 30%;
+}
+background{
     background-image:url(images/PokeClickerBackground.jpg)
 	background-size: 100%;
 }
