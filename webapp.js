@@ -28,8 +28,19 @@ function shop(pokemon) {
 
 
 
-if(>= 1) {
+if(caterpie>= 1) {
 	
-setInterval()	
+setInterval(bonus,1000)
 	
 	}
+	
+function bonus() {
+	// check how many pikachu
+	// multiple pikachu * 10
+	// add to i
+	
+	// caterpie
+	
+	//
+	
+}
