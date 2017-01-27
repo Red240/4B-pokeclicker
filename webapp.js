@@ -17,13 +17,18 @@ function shop(pokemon) {
 				pikachu++;
 				i-=40;
 			}
-		
+		case "caterpie":
+			if(i>=10) {
+				caterpie++;
+				i-=10;
+			
+			}
 	}
 }
 
 
 
-if(caterpie >= 1) {
+if(>= 1) {
 	
 setInterval()	
 	
