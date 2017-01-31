@@ -11,18 +11,21 @@ function buttonClick() {
 }
 
 function shop(pokemon) {
+	prompt("what pokemon would you like to buy. 1 for caterpie, 2 for Charmander, 3 for pichu, 4, for teping, 5 for Piplupf, 6 for oshawatt, 7 for Reshiram, and 8 for Arceus.");
 	switch(pokemon) {
 		case "pikachu":
 			if(i>=40) {		
 				pikachu++;
 				i-=40;
 			}
+			break;
 		case "caterpie":
 			if(i>=10) {
 				caterpie++;
 				i-=10;
-			
 			}
+			break;
+			
 	}
 }
 
