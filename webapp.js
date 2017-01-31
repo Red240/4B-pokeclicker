@@ -75,21 +75,43 @@ function shop(pokemon) {
 	}
 }
 
-
-
-if(caterpie>= 1) {
-	
-setInterval(bonus,1000)
-	
-	}
-	
-function bonus() {
-	// check how many pikachu
+// check how many pikachu
 	// multiple pikachu * 10
 	// add to i
 	
 	// caterpie
 	
 	//
+
+if(caterpie>= 1) {
+	setInterval(firstbonus,1000);
+	}
+
+if(charmander>= 1) {
+	setInterval(secondbonus,1000);
+	}
+
+if(pichu>= 1) {
+	setInterval(thirdbonus,1000);
+	}
+	
+if(tepig>= 1) {
+	setInterval(forthbonus,1000);
+	}
+	
+if(Piplup>= 1) {
+	setInterval(fifthbonus,1000);
+	}
+	
+if(oshawatt>= 1) {
+	setInterval(sixthbonus,1000);
+	}
+	
+if(Reshiram>= 1) {
+	setInterval(sevethbonus,1000);
+	}
+	
+function bonus() {
+	
 	
 }
