@@ -5,8 +5,8 @@ var i = 0;
 var caterpie = 0;
 var charmander = 0;
 var pichu = 0;
-var teping = 0;
-var Piplupf = 0;
+var tepig = 0;
+var Piplup= 0;
 var oshawatt = 0;
 var Reshiram = 0;
 var Arceus = 0;
@@ -16,20 +16,61 @@ function buttonClick() {
 }
 
 function shop(pokemon) {
-	prompt("what pokemon would you like to buy. 1 for caterpie, 2 for Charmander, 3 for pichu, 4, for teping, 5 for Piplupf, 6 for oshawatt, 7 for Reshiram, and 8 for Arceus.");
+	
 	switch(pokemon) {
-		case "pikachu":
-			if(i>=40) {		
-				pikachu++;
-				i-=40;
-			}
-			break;
+		
 		case "caterpie":
 			if(i>=10) {
 				caterpie++;
 				i-=10;
 			}
 			break;
+		case "charmander":
+			if(i>=100) {
+				charmander++;
+				i-=100;
+			}
+			break;
+		case "pichu":
+			if(i>=1000) {
+				pichu++;
+				i-=1000;
+			}
+			break;
+		case "tepig":
+			if(i>=10000) {
+				tepig++;
+				i-=10000;
+			}
+			break;
+		case "Piplup":
+			if(i>=20000) {
+				Piplup++;
+				i-=20000;
+			}
+			break;
+		case "oshawatt":
+			if(i>=40000) {
+				oshawatt++;
+				i-=40000;
+			}
+			break;
+		case "Reshiram":
+			if(i>=100000) {
+				Reshiram++;
+				i-=100000;
+			}
+			break;
+		case "Arceus":
+			if(i>=1000000) {
+				Arceus++;
+				i-=1000000;
+			}
+			break;
+		default:
+			alert("press a button with vaild input.");
+			break;
+				
 			
 	}
 }
