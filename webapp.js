@@ -111,6 +111,10 @@ if(Reshiram>= 1) {
 	setInterval(sevethbonus,1000);
 	}
 	
+if(Arceus>= 1) {
+	setInterval(lastbonus,1000);
+	}
+	
 function bonus() {
 	
 	
