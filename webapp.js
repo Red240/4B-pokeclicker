@@ -2,9 +2,14 @@
 
 //This function below which is the buttonclick makes it so that the pokeclicker works and is spamable. It
 var i = 0;
-var pikachu = 0;
 var caterpie = 0;
 var charmander = 0;
+var pichu = 0;
+var teping = 0;
+var Piplupf = 0;
+var oshawatt = 0;
+var Reshiram = 0;
+var Arceus = 0;
 
 function buttonClick() {
 	document.getElementById('inc').value = ++i;
