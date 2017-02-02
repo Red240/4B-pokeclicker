@@ -2,13 +2,13 @@
 
 //This function below which is the buttonclick makes it so that the pokeclicker works and is spamable. It
 var i = 0;
-var caterpie = 0;
+var bulbasaur = 0;
 var charmander = 0;
-var pichu = 0;
-var tepig = 0;
-var Piplup= 0;
-var oshawatt = 0;
-var Reshiram = 0;
+var Squirtle = 0;
+var Pikachu = 0;
+var Ratatta= 0;
+var Nidoran = 0;
+var Drantini = 0;
 var Arceus = 0;
 
 function buttonClick() {
@@ -19,9 +19,9 @@ function shop(pokemon) {
 	
 	switch(pokemon) {
 		
-		case "caterpie":
+		case "bulbasaur":
 			if(i>=10) {
-				caterpie++;
+				bulbasaur++;
 				i-=10;
 			}
 			break;
@@ -31,33 +31,33 @@ function shop(pokemon) {
 				i-=100;
 			}
 			break;
-		case "pichu":
+		case "Squirtle":
 			if(i>=1000) {
-				pichu++;
+				Squirtle++;
 				i-=1000;
 			}
 			break;
-		case "tepig":
+		case "Pikachu":
 			if(i>=10000) {
-				tepig++;
+				Pikachu++;
 				i-=10000;
 			}
 			break;
-		case "Piplup":
+		case "Ratatta":
 			if(i>=20000) {
-				Piplup++;
+				Ratatta++;
 				i-=20000;
 			}
 			break;
-		case "oshawatt":
+		case "Nidoran":
 			if(i>=40000) {
-				oshawatt++;
+				Nidoran++;
 				i-=40000;
 			}
 			break;
-		case "Reshiram":
+		case "Drantini":
 			if(i>=100000) {
-				Reshiram++;
+				Drantini++;
 				i-=100000;
 			}
 			break;
@@ -77,7 +77,7 @@ function shop(pokemon) {
 
 
 
-if(caterpie>= 1) {
+if(bulbasaur>= 1) {
 	setInterval(firstbonus,1000);
 	}
 
@@ -85,23 +85,23 @@ if(charmander>= 1) {
 	setInterval(secondbonus,1000);
 	}
 
-if(pichu>= 1) {
+if(Squirtle>= 1) {
 	setInterval(thirdbonus,1000);
 	}
 	
-if(tepig>= 1) {
+if(Pikachu>= 1) {
 	setInterval(forthbonus,1000);
 	}
 	
-if(Piplup>= 1) {
+if(Ratatta>= 1) {
 	setInterval(fifthbonus,1000);
 	}
 	
-if(oshawatt>= 1) {
+if(Nidoran>= 1) {
 	setInterval(sixthbonus,1000);
 	}
 	
-if(Reshiram>= 1) {
+if(Drantini>= 1) {
 	setInterval(sevethbonus,1000);
 	}
 	
@@ -119,8 +119,8 @@ if(Arceus>= 1) {
 	
 function firstbonus() {
 	
-	if(caterpie>= 1) {
-		var sum1 = caterpie*0.1;
+	if(bulbasaur>= 1) {
+		var sum1 = bulbasaur * 0.1;
 		i+= sum1;
 		}
 
@@ -129,7 +129,7 @@ function firstbonus() {
 function secondbonus() {
 	
 	if(charmander>= 1) {
-		var sum2 = charmander*2;
+		var sum2 = charmander * 2;
 		i+= sum2;
 		}
 	
@@ -137,8 +137,8 @@ function secondbonus() {
 	
 function thirdbonus() {
 	
-	if(pichu>= 1) {
-		var sum3 = pichu*10;
+	if(Squirtle>= 1) {
+		var sum3 = Squirtle * 10;
 		i+= sum3;
 		}
 	
@@ -146,8 +146,8 @@ function thirdbonus() {
 	
 function forthbonus() {
 	
-	if(tepig>= 1) {
-		var sum4 = tepig*20;
+	if(Pikachu>= 1) {
+		var sum4 = Pikachu * 20;
 		i+= sum4;
 		}
 	
@@ -155,8 +155,8 @@ function forthbonus() {
 	
 function fifthbonus() {
 	
-	if(Piplup>= 1) {
-		var sum5 = Piplup*50;
+	if(Ratatta>= 1) {
+		var sum5 = Ratatta * 50;
 		i+= sum5;
 		}
 	
@@ -164,8 +164,8 @@ function fifthbonus() {
 	
 function sixthbonus() {
 	
-	if(oshawatt>= 1) {
-		var sum6 = oshawatt*70;
+	if(Nidoran>= 1) {
+		var sum6 = Nidoran * 70;
 		i+= sum6;
 		}
 	
@@ -173,8 +173,8 @@ function sixthbonus() {
 	
 function sevethbonus() {
 	
-	if(Reshiram>= 1) {
-		var sum7 = Reshiram*100;
+	if(Drantini>= 1) {
+		var sum7 = Drantini * 100;
 		i+= sum7;
 		}
 	
@@ -183,7 +183,7 @@ function sevethbonus() {
 function lastbonus() {
 	
 	if(Arceus>= 1) {
-		var sum8 = Arceus*200;
+		var sum8 = Arceus * 200;
 		i+= sum8;
 		}
 	
