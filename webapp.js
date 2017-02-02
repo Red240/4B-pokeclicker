@@ -121,7 +121,7 @@ function firstbonus() {
 	
 	if(bulbasaur>= 1) {
 		var sum1 = bulbasaur * 0.1;
-		document.getElementById('inc').value = i+= sum1;
+		i+= sum1;
 		}
 
 }
