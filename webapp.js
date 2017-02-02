@@ -115,7 +115,7 @@ if(Arceus>= 1) {
 	setInterval(lastbonus,1000);
 	}
 	
-function bonus() {
+function firstbonus() {
 	
 	
 }
