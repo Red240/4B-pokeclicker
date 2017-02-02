@@ -68,20 +68,14 @@ function shop(pokemon) {
 			}
 			break;
 		default:
-			alert("press a button with vaild input.");
+			alert("Please collect more pokeballs.");
 			break;
 				
 			
 	}
 }
 
-// check how many pikachu
-	// multiple pikachu * 10
-	// add to i
-	
-	// caterpie
-	
-	//
+
 
 if(caterpie>= 1) {
 	setInterval(firstbonus,1000);
@@ -115,7 +109,82 @@ if(Arceus>= 1) {
 	setInterval(lastbonus,1000);
 	}
 	
+	// check how many pikachu
+	// multiple pikachu * 10
+	// add to i
+	
+	// caterpie
+	
+	//
+	
 function firstbonus() {
 	
-	
+	if(caterpie>= 1) {
+		var sum1 = caterpie*0.1;
+		i+= sum1;
+		}
+
 }
+
+function secondbonus() {
+	
+	if(charmander>= 1) {
+		var sum2 = charmander*2;
+		i+= sum2;
+		}
+	
+	}
+	
+function thirdbonus() {
+	
+	if(pichu>= 1) {
+		var sum3 = pichu*10;
+		i+= sum3;
+		}
+	
+	}
+	
+function forthbonus() {
+	
+	if(tepig>= 1) {
+		var sum4 = tepig*20;
+		i+= sum4;
+		}
+	
+	}
+	
+function fifthbonus() {
+	
+	if(Piplup>= 1) {
+		var sum5 = Piplup*50;
+		i+= sum5;
+		}
+	
+	}
+	
+function sixthbonus() {
+	
+	if(oshawatt>= 1) {
+		var sum6 = oshawatt*70;
+		i+= sum6;
+		}
+	
+	}
+	
+function sevethbonus() {
+	
+	if(Reshiram>= 1) {
+		var sum7 = Reshiram*100;
+		i+= sum7;
+		}
+	
+	}
+	
+function lastbonus() {
+	
+	if(Arceus>= 1) {
+		var sum8 = Arceus*200;
+		i+= sum8;
+		}
+	
+	}
