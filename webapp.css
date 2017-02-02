@@ -20,3 +20,8 @@ button {
     font-size:0;
 }
 
+#menu
+{
+border-left: 1px solid black;
+height: 100%;
+}
