@@ -11,8 +11,14 @@ var Nidoran = 0;
 var Drantini = 0;
 var Arceus = 0;
 
+function update() {
+	document.getElementById("numberofpokeballs").value = pokeballs;
+}
+
+
 function buttonClick() {
-	document.getElementById('numberofpokeballs').value = ++pokeballs;
+	pokeballs++;
+	update();
 }
 
 function shop(pokemon) {
@@ -105,4 +111,6 @@ function bonus() {
 		pokeballs+= Drantini * 100;
 		
 		pokeballs+= Arceus * 200;
+		
+		update();
 }
