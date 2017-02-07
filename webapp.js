@@ -20,7 +20,7 @@ function buttonClick() {
 	pokeballs++;
 	update();
 }
-
+//serach up how to do math.round
 function shop(pokemon) {
 	
 	switch(pokemon) {
