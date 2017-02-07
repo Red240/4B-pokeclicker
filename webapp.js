@@ -20,49 +20,49 @@ function shop(pokemon) {
 	switch(pokemon) {
 		
 		case "bulbasaur":
-			if(i>=10) {
+			if(pokeballs>=10) {
 				bulbasaur++;
 				pokeballs-=10;
 			}
 			break;
 		case "charmander":
-			if(i>=100) {
+			if(pokeballs>=100) {
 				charmander++;
 				pokeballs-=100;
 			}
 			break;
 		case "Squirtle":
-			if(i>=1000) {
+			if(pokeballs>=1000) {
 				Squirtle++;
 				pokeballs-=1000;
 			}
 			break;
 		case "Pikachu":
-			if(i>=10000) {
+			if(pokeballs>=10000) {
 				Pikachu++;
 				pokeballs-=10000;
 			}
 			break;
 		case "Ratatta":
-			if(i>=20000) {
+			if(pokeballs>=20000) {
 				Ratatta++;
 				pokeballs-=20000;
 			}
 			break;
 		case "Nidoran":
-			if(i>=40000) {
+			if(pokeballs>=40000) {
 				Nidoran++;
 				pokeballs-=40000;
 			}
 			break;
 		case "Drantini":
-			if(i>=100000) {
+			if(pokeballs>=100000) {
 				Drantini++;
 				pokeballs-=100000;
 			}
 			break;
 		case "Arceus":
-			if(i>=1000000) {
+			if(pokeballs>=1000000) {
 				Arceus++;
 				pokeballs-=1000000;
 			}
