@@ -9,6 +9,22 @@
 	top: 0px;
 	left: 0%;
 }
+.box1{
+	width: 90px;
+	background-color:#ECECEC;
+	position: fixed;
+	top: 0px;
+	float: right;
+	right:0%;
+}
+.box2{
+	width: 90px;
+	background-color:#ECECEC;
+	position: fixed;
+	top: 0px;
+	float: right;
+	right:0%;
+}
 body{
     background-image:url(images/PokeClickerBackgroundv2.jpg)
 }
