@@ -77,37 +77,8 @@ function shop(pokemon) {
 
 
 
-if(bulbasaur>= 1) {
-	setInterval(firstbonus,1000);
-	}
+	setInterval(bonus,1000);
 
-if(charmander>= 1) {
-	setInterval(secondbonus,1000);
-	}
-
-if(Squirtle>= 1) {
-	setInterval(thirdbonus,1000);
-	}
-	
-if(Pikachu>= 1) {
-	setInterval(forthbonus,1000);
-	}
-	
-if(Ratatta>= 1) {
-	setInterval(fifthbonus,1000);
-	}
-	
-if(Nidoran>= 1) {
-	setInterval(sixthbonus,1000);
-	}
-	
-if(Drantini>= 1) {
-	setInterval(sevethbonus,1000);
-	}
-	
-if(Arceus>= 1) {
-	setInterval(lastbonus,1000);
-	}
 	
 	// check how many pikachu
 	// multiple pikachu * 10
@@ -117,67 +88,21 @@ if(Arceus>= 1) {
 	
 	//
 	
-function firstbonus() {
+function bonus() {
 	
-		var sum1 = bulbasaur * 0.1;
-		i+= sum1;
-		document.getElementById("inc").value = i;
+		i+= bulbasaur * 0.1;
+	
+		i+= charmander * 2;
 
+		i+= Squirtle * 10;
+		
+		i+= Pikachu * 20;
+		
+		i+= Ratatta * 50;
+		
+		i+= Nidoran * 70;
+		
+		i+= Drantini * 100;
+		
+		i+= Arceus * 200;
 }
-
-function secondbonus() {
-	
-		var sum2 = charmander * 2;
-		i+= sum2;
-		
-	
-	}
-	
-function thirdbonus() {
-	
-		var sum3 = Squirtle * 10;
-		i+= sum3;
-		
-	
-	}
-	
-function forthbonus() {
-	
-		var sum4 = Pikachu * 20;
-		i+= sum4;
-		
-	
-	}
-	
-function fifthbonus() {
-	
-		var sum5 = Ratatta * 50;
-		i+= sum5;
-		
-	
-	}
-	
-function sixthbonus() {
-	
-		var sum6 = Nidoran * 70;
-		i+= sum6;
-
-	
-	}
-	
-function sevethbonus() {
-	
-		var sum7 = Drantini * 100;
-		i+= sum7;
-		
-	
-	}
-	
-function lastbonus() {
-	
-		var sum8 = Arceus * 200;
-		i+= sum8;
-		 nhn
-		 
-	
-	}
