@@ -119,72 +119,64 @@ if(Arceus>= 1) {
 	
 function firstbonus() {
 	
-	if(bulbasaur>= 1) {
 		var sum1 = bulbasaur * 0.1;
 		i+= sum1;
-		}
 
 }
 
 function secondbonus() {
 	
-	if(charmander>= 1) {
 		var sum2 = charmander * 2;
 		i+= sum2;
-		}
+		
 	
 	}
 	
 function thirdbonus() {
 	
-	if(Squirtle>= 1) {
 		var sum3 = Squirtle * 10;
 		i+= sum3;
-		}
+		
 	
 	}
 	
 function forthbonus() {
 	
-	if(Pikachu>= 1) {
 		var sum4 = Pikachu * 20;
 		i+= sum4;
-		}
+		
 	
 	}
 	
 function fifthbonus() {
 	
-	if(Ratatta>= 1) {
 		var sum5 = Ratatta * 50;
 		i+= sum5;
-		}
+		
 	
 	}
 	
 function sixthbonus() {
 	
-	if(Nidoran>= 1) {
 		var sum6 = Nidoran * 70;
 		i+= sum6;
-		}
+
 	
 	}
 	
 function sevethbonus() {
 	
-	if(Drantini>= 1) {
 		var sum7 = Drantini * 100;
 		i+= sum7;
-		}
+		
 	
 	}
 	
 function lastbonus() {
 	
-	if(Arceus>= 1) {
 		var sum8 = Arceus * 200;
 		i+= sum8;
-		}
+		 nhn
+		 
 	
 	}
