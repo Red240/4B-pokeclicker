@@ -39,42 +39,63 @@ function shop(pokemon) {
 				charmander++;
 				pokeballs-=100;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Squirtle":
 			if(pokeballs>=1000) {
 				Squirtle++;
 				pokeballs-=1000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Pikachu":
 			if(pokeballs>=10000) {
 				Pikachu++;
 				pokeballs-=10000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Ratatta":
 			if(pokeballs>=20000) {
 				Ratatta++;
 				pokeballs-=20000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Nidoran":
 			if(pokeballs>=40000) {
 				Nidoran++;
 				pokeballs-=40000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Drantini":
 			if(pokeballs>=100000) {
 				Drantini++;
 				pokeballs-=100000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "Arceus":
 			if(pokeballs>=1000000) {
 				Arceus++;
 				pokeballs-=1000000;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		default:
 			alert("Please collect more pokeballs.");
