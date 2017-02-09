@@ -30,6 +30,9 @@ function shop(pokemon) {
 				bulbasaur++;
 				pokeballs-=10;
 			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
 			break;
 		case "charmander":
 			if(pokeballs>=100) {
