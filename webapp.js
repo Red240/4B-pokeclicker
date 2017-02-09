@@ -12,7 +12,7 @@ var Drantini = 0;
 var Arceus = 0;
 
 function update() {
-	document.getElementById("numberofpokeballs").value = Math.round(pokeballs, 1);
+	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
 }
 
 
