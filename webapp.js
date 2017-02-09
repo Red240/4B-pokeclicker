@@ -12,7 +12,7 @@ var Drantini = 0;
 var Arceus = 0;
 
 function update() {
-	document.getElementById("numberofpokeballs").value = pokeballs;
+	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
 }
 
 
@@ -20,7 +20,7 @@ function buttonClick() {
 	pokeballs++;
 	update();
 }
-
+//serach up how to do math.round
 function shop(pokemon) {
 	
 	switch(pokemon) {
@@ -96,21 +96,21 @@ function shop(pokemon) {
 	
 function bonus() {
 	
-		pokeballs+= bulbasaur * 0.1;
+		pokeballs+= bulbasaur * 0.2;
 	
-		pokeballs+= charmander * 2;
+		pokeballs+= charmander * 5;
 
-		pokeballs+= Squirtle * 10;
+		pokeballs+= Squirtle * 25;
 		
-		pokeballs+= Pikachu * 20;
+		pokeballs+= Pikachu * 50;
 		
-		pokeballs+= Ratatta * 50;
+		pokeballs+= Ratatta * 80;
 		
-		pokeballs+= Nidoran * 70;
+		pokeballs+= Nidoran * 200;
 		
-		pokeballs+= Drantini * 100;
+		pokeballs+= Drantini * 400;
 		
-		pokeballs+= Arceus * 200;
+		pokeballs+= Arceus * 10000;
 		
 		update();
 }
