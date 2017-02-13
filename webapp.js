@@ -11,16 +11,19 @@ var Nidoran = 0;
 var Drantini = 0;
 var Arceus = 0;
 
+
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
 	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
 }
+ 
  
 //This function below which is the buttonclick makes it so that the pokeclicker works and is spamable.  It also hase a Math.round that makes it so it rounds the value of the pokeballs to the nearest tenth.
 function buttonClick() {
 	pokeballs++;
 	update();
 }
+
 
 //This is the shop. This makes it so that when you click the button for the pokemon it starts the code in the corresponding case.
 function shop(pokemon) {
@@ -132,4 +135,11 @@ function bonus() {
 		pokeballs+= Arceus * 10000;
 		
 		update();
+		clickspersecond();
+}
+
+function clickspersecond() {
+	
+	document.getElementById("numberofclicks").value+= (bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000);
+	
 }
