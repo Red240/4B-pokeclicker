@@ -138,9 +138,9 @@ function bonus() {
 		
 		clickspersecond();
 }
-
+//Math.round(10*pokeballs)/10
 function clickspersecond() {
 	
-	document.getElementById("numberofclicks").value+= (bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000);
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000)] )/10;
 	
 }
