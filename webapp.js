@@ -1,6 +1,6 @@
 // JavaScript Document
 
-
+//These are the variables for the number of pokeballs and the pokemon.
 var pokeballs = 0;
 var bulbasaur = 0;
 var charmander = 0;
