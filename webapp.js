@@ -135,6 +135,7 @@ function bonus() {
 		pokeballs+= Arceus * 10000;
 		
 		update();
+		
 		clickspersecond();
 }
 
