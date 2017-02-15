@@ -10,16 +10,18 @@
 	left: 0%;
 }
 .box1{
-	width: 350px;
+	width: 250px;
+	height: 600px;
 	background-color:#007DE8;
 	position: fixed;
 	top: 0px;
 	float: right;
-	right:0%;
+	right:13.5%;
 }
 .box2{
-	width: 90px;
-	background-color:#ECECEC;
+	width: 250px;
+	height:600px;
+	background-color:#007DE8;
 	position: fixed;
 	top: 0px;
 	float: right;
