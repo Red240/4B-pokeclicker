@@ -106,9 +106,9 @@ function shop(pokemon) {
 				}
 			break;
 		case "Greatball":
-			if(pokeballs>=5000000) {
+			if(pokeballs>=500) {
 				greatballs++;
-				pokeballs-=5000000;
+				pokeballs-=500;
 			}
 			else {
 				alert("Please collect more pokeballs.");
@@ -160,5 +160,5 @@ function clickspersecond() {
 //OTHER TYPES OF POKEBALLS
 
 function greatballbonus () {
-	pokeballs++;
+	pokeballs+= 3;
 	}
