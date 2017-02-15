@@ -160,5 +160,5 @@ function clickspersecond() {
 //OTHER TYPES OF POKEBALLS
 
 function greatballbonus () {
-	pokeballs+= 3;
+	pokeballs+= greatballs*3;
 	}
