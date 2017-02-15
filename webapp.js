@@ -2,6 +2,8 @@
 
 //These are the variables for the number of pokeballs and the pokemon.
 var pokeballs = 0;
+var greatballs = 0;
+
 var bulbasaur = 0;
 var charmander = 0;
 var Squirtle = 0;
@@ -21,11 +23,12 @@ function update() {
 //This function below which is the buttonclick makes it so that the pokeclicker works and is spamable.  It also hase a Math.round that makes it so it rounds the value of the pokeballs to the nearest tenth.
 function buttonClick() {
 	pokeballs++;
+	greatballbonus();
 	update();
 }
 
 
-//This is the shop. This makes it so that when you click the button for the pokemon it starts the code in the corresponding case.
+//This is the shop. This makes it so that when you click the button for the pokemon it starts the code in the corresponding case. It is also used to by other ball types like Greatball.
 function shop(pokemon) {
 	
 	switch(pokemon) {
@@ -102,6 +105,15 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;
+		case "Greatball":
+			if(pokeballs>=500) {
+				greatballs++;
+				pokeballs-=500;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
 		default:
 			alert("Please collect more pokeballs.");
 			break;
@@ -138,9 +150,15 @@ function bonus() {
 		
 		clickspersecond();
 }
-//Math.round(10*pokeballs)/10
+//This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
 	
 	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000)] )/10;
 	
 }
+
+//OTHER TYPES OF POKEBALLS
+
+function greatballbonus () {
+	pokeballs+= 3;
+	}
