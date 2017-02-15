@@ -159,6 +159,7 @@ function clickspersecond() {
 
 //OTHER TYPES OF POKEBALLS
 
+//This function adds three to the number of poke balls you make when you click. For example when you click the pokeball you will only get 1 pokeball per click. With a single great ball though, it will bring your clicks on the pokeball to 4 per click becuase it adds 3.
 function greatballbonus () {
-	pokeballs+= 3;
+	pokeballs+= greatballs*3;
 	}
