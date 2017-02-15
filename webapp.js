@@ -1,6 +1,6 @@
 // JavaScript Document
 
-//This function below which is the buttonclick makes it so that the pokeclicker works and is spamable. It
+//These are the variables for the number of pokeballs and the pokemon.
 var pokeballs = 0;
 var bulbasaur = 0;
 var charmander = 0;
@@ -11,16 +11,21 @@ var Nidoran = 0;
 var Drantini = 0;
 var Arceus = 0;
 
+
+//This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
 	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
 }
-
-
+ 
+ 
+//This function below which is the buttonclick makes it so that the pokeclicker works and is spamable.  It also hase a Math.round that makes it so it rounds the value of the pokeballs to the nearest tenth.
 function buttonClick() {
 	pokeballs++;
 	update();
 }
-//serach up how to do math.round
+
+
+//This is the shop. This makes it so that when you click the button for the pokemon it starts the code in the corresponding case.
 function shop(pokemon) {
 	
 	switch(pokemon) {
@@ -106,18 +111,11 @@ function shop(pokemon) {
 }
 
 
-
+//This is the setInterval that makes it so that the pokemon add pokeballs over time. It does this by activating the bonus function.
 	setInterval(bonus,1000);
 
 	
-	// check how many pikachu
-	// multiple pikachu * 10
-	// add to i
-	
-	// caterpie
-	
-	//
-	
+//This function is the bonus function that controlls how many pokeballs you get per second base on the number of pokemon you have.
 function bonus() {
 	
 		pokeballs+= bulbasaur * 0.2;
@@ -137,4 +135,12 @@ function bonus() {
 		pokeballs+= Arceus * 10000;
 		
 		update();
+		
+		clickspersecond();
+}
+//Math.round(10*pokeballs)/10
+function clickspersecond() {
+	
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000)] )/10;
+	
 }
