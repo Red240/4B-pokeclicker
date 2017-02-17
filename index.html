@@ -9,6 +9,10 @@
 <script type="text/javascript" src="webapp.js"></script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<audio id="myAudio">
+  <source src="Sounds%3AMusic/Route 201 (Daytime) - Pokémon Diamond  Pearl Music Extended.mp3"></source>
+  Your browser might not support the audio element.
+</audio>
 </head>
 
 <body>
@@ -31,6 +35,7 @@
 		</p>
 		<p>Price: 10<button onClick="shop('bulbasaur')" class="pokemon"><img src="images/001Bulbasaur_Dream.png"></button></p><p>Name:Bulbasaur-0.2 pokeballs e/sec.</p>
 		<p>Price: 100<button onClick="shop('charmander')" class="pokemon"><img src="images/250px-004Charmander.png"></button></p><p>Name:Charmander-5 pokeballs e/sec.</p>
+		<p>Price: 500<button onClick="shop('Greatball')" class="pokemon"><img src="images/Greatball.png"></button></p><p> Name:Greatball- +3 pokeballs e/click.</p>
 		<p>Price: 1000<button onClick="shop('Squirtle')" class="pokemon"><img src="images/250px-007Squirtle.png"></button></p><p>Name:Squirtle-25 pokeballs e/sec.</p>
 		<p>Price: 10000<button onClick="shop('Pikachu')" class="pokemon"><img src="images/250px-025Pikachu.png"></button></p><p>Name:Pikachu-50 pokeballs e/sec.</p>
 			</div>
@@ -39,8 +44,13 @@
 		<p>Price: 50000<button onClick="shop('Nidoran')" class="pokemon"><img src="images/250px-032Nidoran.png"></button></p><p>Name:Nidoran-200 pokeballs e/sec.</p>
 		<p>Price: 100000<button onClick="shop('Drantini')" class="pokemon"><img src="images/250px-147Dratini.png"></button></p><p>Name:Dratini-400 pokeballs e/sec.</p>
 		<p>Price: 1000000<button onClick="shop('Arceus')" class="pokemon"><img src="images/250px-493Arceus.png"></button></p><p> Name:Arceus-10000 pokeballs e/sec.</p>
-		<p>Price: 500<button onClick="shop('Greatball')" class="pokemon"><img src="images/Greatball.png"></button></p><p> Name:Greatball- +3 pokeballs e/click.</p>
 		<p>Price: 15000<button onClick="shop('Ultraball')" class="pokemon"><img src="images/Ultraball.png"></button></p><p> Name:Ultraball- +100  pokeballs e/click.</p>
 	</div>
+	<div class="audio box">
+	<p>
+		<button onClick="playAudio()" type="button" value="Play song"></button>
+		<button onClick="pauseAudio()" type="button" value="Pause song"></button>
+	</p>
+		</div>
 </body>
 </html>
