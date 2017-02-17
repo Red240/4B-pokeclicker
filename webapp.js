@@ -177,3 +177,13 @@ function greatballbonus () {
 function ultraballbonus () {
 	pokeballs+= ultraballs*100;
 }
+//Music Play and Pause function
+	var Masic = document.getElementById("myAudio");
+	
+	function playAudio() {
+		x.play();
+	}
+	
+	function pauseAudio() {
+		x.pause();
+	}
