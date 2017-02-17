@@ -115,10 +115,12 @@ function shop(pokemon) {
 			else {
 				alert("Please collect more pokeballs.");
 			}
+			break;
 			case "Ultraball":
 			if(pokeballs>=15000) {
 				ultraballs++;
 				pokeballs-=15000;
+			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
