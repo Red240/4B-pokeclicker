@@ -3,6 +3,7 @@
 //These are the variables for the number of pokeballs and the pokemon.
 var pokeballs = 0;
 var greatballs = 0;
+var ultraballs = 0;
 
 var bulbasaur = 0;
 var charmander = 0;
@@ -24,6 +25,7 @@ function update() {
 function buttonClick() {
 	pokeballs++;
 	greatballbonus();
+	ultraballbonus();
 	update();
 }
 
@@ -109,7 +111,14 @@ function shop(pokemon) {
 			if(pokeballs>=500) {
 				greatballs++;
 				pokeballs-=500;
+			}	
+			else {
+				alert("Please collect more pokeballs.");
 			}
+			case "Ultraball":
+			if(pokeballs>=15000) {
+				ultraballs++;
+				pokeballs-=15000;
 			else {
 				alert("Please collect more pokeballs.");
 				}
@@ -163,3 +172,6 @@ function clickspersecond() {
 function greatballbonus () {
 	pokeballs+= greatballs*3;
 	}
+function ultraballbonus () {
+	pokeballs+= ultraballs*100;
+}
