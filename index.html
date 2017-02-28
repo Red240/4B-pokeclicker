@@ -9,13 +9,14 @@
 <script type="text/javascript" src="webapp.js"></script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<audio id="myAudio">
-  <source src="Sounds%3AMusic/Route 201 (Daytime) - Pokémon Diamond  Pearl Music Extended.mp3"></source>
-  Your browser might not support the audio element.
-</audio>
+
 </head>
 
 <body>
+<audio id="myAudio">
+  <source src="sounds/Route 201 (Daytime) - Pokémon Diamond  Pearl Music Extended.mp3"></source>
+  Your browser might not support the audio element.
+</audio>
 <input type="text" id="numberofpokeballs" value="0">
  <input type="text" id="numberofclicks" value ="0">
 <!--Add your HTML here-->
@@ -48,8 +49,8 @@
 	</div>
 	<div class="audio box">
 	<p>
-		<button onClick="playAudio()" type="button" value="Play song"></button>
-		<button onClick="pauseAudio()" type="button" value="Pause song"></button>
+		<input onClick="playAudio()" type="button" value="Play song">
+		<input onClick="pauseAudio()" type="button" value="Pause song">
 	</p>
 		</div>
 </body>
