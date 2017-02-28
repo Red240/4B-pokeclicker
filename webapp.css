@@ -16,7 +16,7 @@
 	position: fixed;
 	top: 0px;
 	float: right;
-	right:13.5%;
+	right:265px;
 }
 .box2{
 	width: 250px;
@@ -42,5 +42,9 @@ button {
 {
 border-left: 1px solid black;
 height: 100%;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> origin/CSS
