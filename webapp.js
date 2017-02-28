@@ -15,6 +15,7 @@ var Drantini = 0;
 var Arceus = 0;
 
 //COOKIES
+function l;
 document.cookie = "pokeballs";
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
