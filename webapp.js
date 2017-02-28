@@ -14,6 +14,8 @@ var Nidoran = 0;
 var Drantini = 0;
 var Arceus = 0;
 
+//COOKIES
+document.cookie = "pokeballs";
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
@@ -177,13 +179,3 @@ function greatballbonus () {
 function ultraballbonus () {
 	pokeballs+= ultraballs*100;
 }
-//Music Play and Pause function
-	var Masic = document.getElementById("myAudio");
-	
-	function playAudio() {
-		x.play();
-	}
-	
-	function pauseAudio() {
-		x.pause();
-	}
