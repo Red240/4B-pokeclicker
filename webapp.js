@@ -14,6 +14,15 @@ var Nidoran = 0;
 var Drantini = 0;
 var Arceus = 0;
 
+//COOKIES
+function pokecookie () {
+	
+var setcookie = pokeballs;
+document.cookie = "setcookie"
+update();
+
+	}
+
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
@@ -54,54 +63,54 @@ function shop(pokemon) {
 				}
 			break;
 		case "Squirtle":
-			if(pokeballs>=1000) {
+			if(pokeballs>=1500) {
 				Squirtle++;
-				pokeballs-=1000;
+				pokeballs-=1500;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Pikachu":
-			if(pokeballs>=10000) {
+			if(pokeballs>=14200) {
 				Pikachu++;
-				pokeballs-=10000;
+				pokeballs-=14200;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Ratatta":
-			if(pokeballs>=20000) {
+			if(pokeballs>=25500) {
 				Ratatta++;
-				pokeballs-=20000;
+				pokeballs-=25500;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Nidoran":
-			if(pokeballs>=40000) {
-				Nidoran++;
-				pokeballs-=40000;
-			}
-			else {
-				alert("Please collect more pokeballs.");
-				}
-			break;
-		case "Drantini":
 			if(pokeballs>=100000) {
-				Drantini++;
+				Nidoran++;
 				pokeballs-=100000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
+		case "Drantini":
+			if(pokeballs>400000) {
+				Drantini++;
+				pokeballs-=400000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;
 		case "Arceus":
-			if(pokeballs>=1000000) {
+			if(pokeballs>=10000000) {
 				Arceus++;
-				pokeballs-=1000000;
+				pokeballs-=10000000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
@@ -143,19 +152,19 @@ function bonus() {
 	
 		pokeballs+= bulbasaur * 0.2;
 	
-		pokeballs+= charmander * 5;
+		pokeballs+= charmander * 3;
 
-		pokeballs+= Squirtle * 25;
+		pokeballs+= Squirtle * 31;
 		
-		pokeballs+= Pikachu * 50;
+		pokeballs+= Pikachu * 320;
 		
-		pokeballs+= Ratatta * 80;
+		pokeballs+= Ratatta * 650;
 		
-		pokeballs+= Nidoran * 200;
+		pokeballs+= Nidoran * 1650;
 		
-		pokeballs+= Drantini * 400;
+		pokeballs+= Drantini * 3500;
 		
-		pokeballs+= Arceus * 10000;
+		pokeballs+= Arceus * 12000;
 		
 		update();
 		
@@ -177,13 +186,3 @@ function greatballbonus () {
 function ultraballbonus () {
 	pokeballs+= ultraballs*100;
 }
-//Music Play and Pause function
-	var Masic = document.getElementById("myAudio");
-	
-	function playAudio() {
-		x.play();
-	}
-	
-	function pauseAudio() {
-		x.pause();
-	}
