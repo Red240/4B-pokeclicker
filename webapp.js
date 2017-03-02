@@ -15,13 +15,9 @@ var Drantini = 0;
 var Arceus = 0;
 
 //COOKIES
-function pokecookie () {
-	
-var setcookie = pokeballs;
-document.cookie = "setcookie"
-update();
 
-	}
+document.cookie = "cpokeballs =" + pokeballs;
+
 
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
@@ -99,9 +95,9 @@ function shop(pokemon) {
 				}
 			break;
 		case "Drantini":
-			if(pokeballs>400000) {
+			if(pokeballs>170000) {
 				Drantini++;
-				pokeballs-=400000;
+				pokeballs-=170000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
@@ -160,11 +156,11 @@ function bonus() {
 		
 		pokeballs+= Ratatta * 650;
 		
-		pokeballs+= Nidoran * 1650;
+		pokeballs+= Nidoran * 2200;
 		
 		pokeballs+= Drantini * 3500;
 		
-		pokeballs+= Arceus * 12000;
+		pokeballs+= Arceus * 52420;
 		
 		update();
 		
@@ -173,7 +169,7 @@ function bonus() {
 //This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
 	
-	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000)] )/10;
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + ( Ratatta * 650) + (Nidoran * 2200) + (Drantini * 3500) + (Arceus * 52420)] )/10;
 	
 }
 
