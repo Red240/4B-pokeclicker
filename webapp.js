@@ -169,7 +169,7 @@ function bonus() {
 //This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
 	
-	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 5) + (Squirtle * 25) + (Pikachu * 50) + ( Ratatta * 80) + (Nidoran * 200) + (Drantini * 400) + (Arceus * 10000)] )/10;
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + ( Ratatta * 650) + (Nidoran * 1650) + (Drantini * 3500) + (Arceus * 12000)] )/10;
 	
 }
 
