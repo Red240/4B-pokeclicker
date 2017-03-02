@@ -35,6 +35,11 @@ function save_cookies() {
 }
 
 function load_cookies() {
+	// "Arceus=0; Drantini=0; Nidoran=0; Pikachu=0; Ratatta=0; Squirtle=0; bulbasaur=0; charmander=0; greatballs=0; pokeballs=15; ultraballs=0"
+	// var myArray = [1,2,3, "text"];
+	// alert(myArray[3]); -> "text"
+	// myArray.length -> 4
+	// split("; ");
 	alert(document.cookie);
 }
 
