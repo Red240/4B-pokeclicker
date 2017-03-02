@@ -16,7 +16,7 @@ var Arceus = 0;
 
 //COOKIES
 
-document.cookie = "pokeballs=1";
+document.cookie = pokeballs;
 
 
 
