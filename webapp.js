@@ -16,8 +16,27 @@ var Arceus = 0;
 
 //COOKIES
 
-document.cookie = pokeballs;
+function save_cookies() {
+	var d = new Date();
+	d.setTime(d.getTime() + (120*24*60*60*1000));
+	var expires = "expires="+ d.toUTCString();
+	
+	document.cookie = "pokeballs=" + pokeballs + "; " + expires;
+	document.cookie = "greatballs=" + greatballs + "; " + expires;
+	document.cookie = "ultraballs=" + ultraballs + "; " + expires;
+	document.cookie = "bulbasaur=" + bulbasaur + "; " + expires;
+	document.cookie = "charmander=" + charmander + "; " + expires;
+	document.cookie = "Squirtle=" + Squirtle + "; " + expires;
+	document.cookie = "Pikachu=" + Pikachu + "; " + expires;
+	document.cookie = "Ratatta=" + Ratatta + "; " + expires;
+	document.cookie = "Nidoran=" + Nidoran + "; " + expires;
+	document.cookie = "Drantini=" + Drantini + "; " + expires;
+	document.cookie = "Arceus=" + Arceus + "; " + expires;
+}
 
+function load_cookies() {
+	alert(document.cookie);
+}
 
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
