@@ -39,4 +39,4 @@ This is our initial release. We hope you enjoy it! It includes the usual basics 
 * Jack Huang
 * Arya Tikku
 * Damian Dhesi
-* Ashvin Tigga )Grammar Police(
+* Ashvin Tigga
