@@ -32,6 +32,7 @@ function save_cookies() {
 	document.cookie = "Ratatta=" + Ratatta + "; " + expires;
 	document.cookie = "Nidoran=" + Nidoran + "; " + expires;
 	document.cookie = "Drantini=" + Drantini + "; " + expires;
+	document.cookie = "MewTwo=" + MewTwo + "; " + expires;
 	document.cookie = "Arceus=" + Arceus + "; " + expires;
 }
 
@@ -144,7 +145,7 @@ function shop(pokemon) {
 			break;
 				case "MewTwo":
 			if(pokeballs>2000000) {
-				Drantini++;
+				MewTwo++;
 				pokeballs-=2000000;
 			}
 			else {
