@@ -52,7 +52,13 @@ function load_cookies() {
 		var temArray = split(" ");
 		
 		var key = temArray[0];
-		var value = temArray
+		var value = temArray[1];
+		
+		if(key == "pokeballs") {
+			
+			var pokeballs = temArray[1];
+			
+			}
 		
 		}
 	
