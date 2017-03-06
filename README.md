@@ -1,7 +1,7 @@
 # Pokéclicker
 
 ## Description
-A clicker game, based on Cookie Clicker. Your goal is to be the very best like no one ever was.
+Pokéclicker is a clicker game that is based on Cookie Clicker. To start play this game, all you have to do is start clicking on the pokeball. By clicking on the pokeball, you gain more pokeballs. As you gain more pokeballs, you can purchase pokémon (which increases the amount of pokeballs you get per second) and other pokeball types (which increases the amount of pokeballs as you click on the pokeball). Your goal is to be the very best like no one ever was!
 <!--
 ## FAQs
 
