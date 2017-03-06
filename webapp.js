@@ -12,6 +12,7 @@ var Pikachu = 0;
 var Ratatta= 0;
 var Nidoran = 0;
 var Drantini = 0;
+var MewTwo = 0;
 var Arceus = 0;
 
 //COOKIES
@@ -40,7 +41,21 @@ function load_cookies() {
 	// alert(myArray[3]); -> "text"
 	// myArray.length -> 4
 	// split("; ");
-	alert(document.cookie);
+	
+	var str = document.cookie;
+	var mainArray = str.split("; ");
+	var length = mainArray.length;
+	
+	for( var i = 0; i < length; i++) {
+		
+		var temArray = split(" ");
+		
+		var key = temArray[0];
+		var value = temArray
+		
+		}
+	
+	
 }
 
 
@@ -127,6 +142,15 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;
+				case "MewTwo":
+			if(pokeballs>2000000) {
+				Drantini++;
+				pokeballs-=2000000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;
 		case "Arceus":
 			if(pokeballs>=10000000) {
 				Arceus++;
@@ -182,9 +206,11 @@ function bonus() {
 		
 		pokeballs+= Nidoran * 2200;
 		
-		pokeballs+= Drantini * 3500;
+		pokeballs+= Drantini * 4000;
 		
-		pokeballs+= Arceus * 52420;
+		pokeballs+= MewTwo * 47000;
+		
+		pokeballs+= Arceus * 250000;
 		
 		update();
 		
@@ -193,7 +219,7 @@ function bonus() {
 //This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
 	
-	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + ( Ratatta * 650) + (Nidoran * 2200) + (Drantini * 3500) + (Arceus * 52420)] )/10;
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + ( Ratatta * 650) + (Nidoran * 2200) + (Drantini * 4000) + (MewTwo * 47000) + (Arceus * 250000)] )/10;
 	
 }
 
