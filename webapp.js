@@ -45,9 +45,9 @@ function load_cookies() {
 	
 	var str = document.cookie;
 	var mainArray = str.split("; ");
+	var l = mainArray.length;
 	
-	
-	for( var i = 0; i < 11; i++) {
+	for( var i = 0; i < l; i++) {
 		
 		var temArray = mainArray.split(" ");
 		
