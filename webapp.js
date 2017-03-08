@@ -52,7 +52,13 @@ function load_cookies() {
 		var temArray = split(" ");
 		
 		var key = temArray[0];
-		var value = temArray
+		var value = temArray[1];
+		
+		if(key == "pokeballs") {
+			
+			var pokeballs = temArray[1];
+			
+			}
 		
 		}
 	
@@ -90,72 +96,72 @@ function shop(pokemon) {
 				}
 			break;
 		case "charmander":
-			if(pokeballs>=100) {
+			if(pokeballs>=150) {
 				charmander++;
-				pokeballs-=100;
+				pokeballs-=150;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Squirtle":
-			if(pokeballs>=1500) {
+			if(pokeballs>=2500) {
 				Squirtle++;
-				pokeballs-=1500;
+				pokeballs-=2500;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Pikachu":
-			if(pokeballs>=14200) {
+			if(pokeballs>=24200) {
 				Pikachu++;
-				pokeballs-=14200;
+				pokeballs-=24200;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Ratatta":
-			if(pokeballs>=25500) {
+			if(pokeballs>=75500) {
 				Ratatta++;
-				pokeballs-=25500;
+				pokeballs-=75500;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Nidoran":
-			if(pokeballs>=100000) {
+			if(pokeballs>=300000) {
 				Nidoran++;
-				pokeballs-=100000;
+				pokeballs-=300000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Drantini":
-			if(pokeballs>170000) {
+			if(pokeballs>420000) {
 				Drantini++;
-				pokeballs-=170000;
+				pokeballs-=420000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 				case "MewTwo":
-			if(pokeballs>2000000) {
+			if(pokeballs>4000000) {
 				MewTwo++;
-				pokeballs-=2000000;
+				pokeballs-=4000000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;
 		case "Arceus":
-			if(pokeballs>=10000000) {
+			if(pokeballs>=15000000) {
 				Arceus++;
-				pokeballs-=10000000;
+				pokeballs-=15000000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
