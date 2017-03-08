@@ -45,33 +45,26 @@ function load_cookies() {
 	
 	var str = document.cookie;
 	var mainArray = str.split("; ");
-	var l = mainArray.length;
-	
-	for( var i = 0; i < l; i++) {
+
+	alert(mainArray);
+	for( var i = 0; i <= mainArray.length; i++) {
 		
-		var temArray = mainArray.split(" ");
-		
+		var temArray = mainArray.split("=");
+		alert(temArray);
 		var key = temArray[0];
 		var value = temArray[1];
 		
-		if(key == "pokeballs") {
+		if(key === "pokeballs") {
 			
 			 pokeballs = value;
 			
-			}
-		
-/*		if(key == " greatballs") {
-			
-			var greatballs = temArray[1];
-			
-			} */
-		
 		}
+		else { alert("good");}
+		
+	}
 	
-	
-} 
 
-
+}
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
 	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
