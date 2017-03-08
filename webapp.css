@@ -18,6 +18,7 @@
 	float: right;
 	right:265px;
 	border-radius:25px;
+	overflow: scroll;
 }
 .box2{
 	width: 250px;
@@ -28,7 +29,6 @@
 	float: right;
 	right:0%;
 border-radius:25px;
-overflow: scroll;
 }
 body{
     background-image:url(images/Alakazam.jpg)
