@@ -56,7 +56,7 @@ function load_cookies() {
 		
 		if(key == "pokeballs") {
 			
-			var pokeballs = value;
+			 pokeballs = value;
 			
 			}
 		
