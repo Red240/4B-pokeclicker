@@ -60,10 +60,16 @@ function load_cookies() {
 			
 			}
 		
+/*		if(key == " greatballs") {
+			
+			var greatballs = temArray[1];
+			
+			}
+		
 		}
 	
 	
-}
+} */
 
 
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
