@@ -45,18 +45,18 @@ function load_cookies() {
 	
 	var str = document.cookie;
 	var mainArray = str.split("; ");
-	var length = mainArray.length;
 	
-	for( var i = 0; i < length; i++) {
+	
+	for( var i = 0; i < 11; i++) {
 		
-		var temArray = split(" ");
+		var temArray = mainArray.split(" ");
 		
 		var key = temArray[0];
 		var value = temArray[1];
 		
 		if(key == "pokeballs") {
 			
-			var pokeballs = temArray[1];
+			var pokeballs = value;
 			
 			}
 		
