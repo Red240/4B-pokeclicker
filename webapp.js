@@ -54,7 +54,7 @@ function load_cookies() {
 		var key = temArray[0];
 		var value = temArray[1];
 		
-		if(key === "pokeballs") {
+		if(key == "pokeballs") {
 			
 			 pokeballs = value;
 			
