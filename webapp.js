@@ -27,13 +27,14 @@ function save_cookies() {
 	document.cookie = "pokeballs=" + pokeballs + "; " + expires;
 	document.cookie = "greatballs=" + greatballs + "; " + expires;
 	document.cookie = "ultraballs=" + ultraballs + "; " + expires;
-	document.cookie = "masterballs=" + masterballs + "; " + expires;
+	//document.cookie = "masterballs=" + masterballs + "; " + expires;
 
 	
 	document.cookie = "bulbasaur=" + bulbasaur + "; " + expires;
 	document.cookie = "charmander=" + charmander + "; " + expires;
 	document.cookie = "Squirtle=" + Squirtle + "; " + expires;
 	document.cookie = "Pikachu=" + Pikachu + "; " + expires;
+	document.cookie = "Leafeon =" + Leafeon  + "; " + expires;
 	document.cookie = "Ratatta=" + Ratatta + "; " + expires;
 	document.cookie = "Nidoran=" + Nidoran + "; " + expires;
 	document.cookie = "Drantini=" + Drantini + "; " + expires;
@@ -54,7 +55,6 @@ function load_cookies() {
 	for( var i = 0; i < mainArray.length; i++) {
 		
 		var tempArray = mainArray[i].split("=");
-		alert(tempArray);
 		var key = tempArray[0];
 		var value = tempArray[1];
 		
@@ -69,32 +69,32 @@ function load_cookies() {
 			case "ultraballs":
 				ultraballs = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "charmander":
+				charmander = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Squirtle":
+				Squirtle = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Pikachu":
+				Pikachu = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Leafeon":
+				Leafeon = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Ratatta":
+				Ratatta = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Nidoran":
+				Nidoran = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Drantini":
+				Drantini = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "MewTwo":
+				MewTwo = Number(value);
 				break;
-			case "pokeballs":
-				pokeballs = Number(value);
+			case "Arceus":
+				Arceus = Number(value);
 				break;
 			
 			
