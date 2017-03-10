@@ -12,43 +12,53 @@
 </head>
 
 <body>
+<!--Save and Load buttons w/ Pokeball amount and Pokeball per second-->
+<input type="button" value="save" onClick="save_cookies();">
+<input type="button" value="load" onClick="load_cookies();">
+<input type="text" id="numberofpokeballs" value="0" readonly>
+ <input type="text" id="numberofclicks" value ="0" readonly>
 <!--Add your HTML here-->
 
 <div class="box">
 	<div class="display">
 		
 	</div>
-	
+	<!--Pokeball button-->
 		<p>
 			<button onClick="buttonClick()" class="pokeball" id="d"><img src="images/Pokeball.png"></button>
 		</p>
 		</div>
 		<div class="box1">
 		<p>
+		<h2>
 		Pokemon Shop
+		</h2>
 		</p>
 		<p>Price: 10<button onClick="shop('bulbasaur')" class="pokemon"><img src="images/001Bulbasaur_Dream.png"></button></p><p>Name:Bulbasaur-0.2 pokeballs e/sec.</p>
-		<p>Price: 100<button onClick="shop('charmander')" class="pokemon"><img src="images/250px-004Charmander.png"></button></p><p>Name:Charmander-3 pokeballs e/sec.</p>
-		<p>Price: 500<button onClick="shop('Greatball')" class="pokemon"><img src="images/Greatball.png"></button></p><p> Name:Greatball- +3 pokeballs e/click.</p>
-		<p>Price: 1500<button onClick="shop('Squirtle')" class="pokemon"><img src="images/250px-007Squirtle.png"></button></p><p>Name:Squirtle-31 pokeballs e/sec.</p>
-		<p>Price: 14200<button onClick="shop('Pikachu')" class="pokemon"><img src="images/250px-025Pikachu.png"></button></p><p>Name:Pikachu-320 pokeballs e/sec.</p>
+		<p>Price: 150<button onClick="shop('charmander')" class="pokemon"><img src="images/250px-004Charmander.png"></button></p><p>Name:Charmander-3 pokeballs e/sec.</p>
+		
+		<p>Price: 2500<button onClick="shop('Squirtle')" class="pokemon"><img src="images/250px-007Squirtle.png"></button></p><p>Name:Squirtle-31 pokeballs e/sec.</p>
+		<p>Price: 24200<button onClick="shop('Pikachu')" class="pokemon"><img src="images/250px-025Pikachu.png"></button></p><p>Name:Pikachu-320 pokeballs e/sec.</p>		
+		<p>Price: 45000<button onClick="shop('Leafeon')" class="pokemon"><img src="images/250px-470Leafeon.png"></button></p><p> Name:Leafeon- +420  pokeballs e/sec.</p>
+		<p>Price: 75500<button onClick="shop('Ratatta')" class="pokemon"><img src="images/019Rattata_AG_anime.png"></button></p><p>Name:Ratatta-650 pokeballs e/sec.</p>
+		<p>Price: 300000<button onClick="shop('Nidoran')" class="pokemon"><img src="images/250px-032Nidoran.png"></button></p><p>Name:Nidoran-2200 pokeballs e/sec.</p>
+		<p>Price: 420000<button onClick="shop('Drantini')" class="pokemon"><img src="images/250px-147Dratini.png"></button></p><p>Name:Dratini-4000 pokeballs e/sec.</p>
+		<p>Price: 4000000<button onClick="shop('MewTwo')" class="pokemon"><img src="images/MewTwo.png"></button></p><p>Name:Mewtwo-47000 pokeballs e/sec.</p>
+		<p>Price: 15000000<button onClick="shop('Arceus')" class="pokemon"><img src="images/250px-493Arceus.png"></button></p><p> Name:Arceus-250000 pokeballs e/sec.</p>
 			</div>
-	<div class="box2">
-		<p>Price: 15000<button onClick="shop('Ultraball')" class="pokemon"><img src="images/Ultraball.png"></button></p><p> Name:Ultraball- +100  pokeballs e/click.</p>
-		<p>Price: 25500<button onClick="shop('Ratatta')" class="pokemon"><img src="images/019Rattata_AG_anime.png"></button></p><p>Name:Ratatta-650 pokeballs e/sec.</p>
-		<p>Price: 100000<button onClick="shop('Nidoran')" class="pokemon"><img src="images/250px-032Nidoran.png"></button></p><p>Name:Nidoran-1650 pokeballs e/sec.</p>
-		<p>Price: 400000<button onClick="shop('Drantini')" class="pokemon"><img src="images/250px-147Dratini.png"></button></p><p>Name:Dratini-3500 pokeballs e/sec.</p>
-		<p>Price: 10000000<button onClick="shop('Arceus')" class="pokemon"><img src="images/250px-493Arceus.png"></button></p><p> Name:Arceus-12000 pokeballs e/sec.</p>
-	</div>
-	<div class="audio">
-	<input type="text" id="numberofpokeballs" value="0">
- <input type="text" id="numberofclicks" value ="0">
-
+			<div class="box2">
+			<p>
+			<h2>
+			Pokeball Shop
+			</h2>
+			</p>
+			<p>Price: 500<button onClick="shop('Greatball')" class="pokemon"><img src="images/Greatball.png"></button></p><p> Name:Greatball- +3 pokeballs e/click.</p>
+			<p>Price: 15000<button onClick="shop('Ultraball')" class="pokemon"><img src="images/Ultraball.png"></button></p><p> Name:Ultraball- +100  pokeballs e/click.</p>
+			</div>
 	<p>
 		<audio controls>
 		<source src="sounds/Route 201 (Daytime) - Pokémon Diamond  Pearl Music Extended.mp3" type="audio/mpeg"></source>
 		</audio>
 	</p>
-		</div>
 </body>
 </html>

@@ -18,6 +18,7 @@
 	float: right;
 	right:265px;
 	border-radius:25px;
+	overflow: scroll;
 }
 .box2{
 	width: 250px;
@@ -46,7 +47,6 @@ button {
 border-left: 1px solid black;
 height: 100%;
 }
-
 
 @media only screen
 and (min-device-width: 500px)
@@ -129,3 +129,67 @@ border-width:8px;
 	}
 }
 	
+@media screen and (max-width : 980px ){
+    #.box {
+        width: 94%;
+    }
+    #.display {
+        width: 75%;
+    }
+    #.pokeball {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #.box1, #.pokemon {
+        width: auto;
+        float: none;
+}
+    #.box2 {
+        height: auto;
+    }
+}
+@media screen and (max-width: 480px)
+{    
+    #.audio
+    {    
+        height: auto;
+    }    
+    h1
+    {
+        font-size: 24px;
+    }
+    #.box
+    {
+        float: none;
+    }
+}
+/* Phones */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+{
+        body  
+        {
+                font-size: 40px;
+        }
+        #.display
+        {
+            height: auto;
+        }
+        #.box1
+        {
+            width:auto;
+        }
+        #.pokemon
+        {
+            width: auto;
+            clear: both;
+        }
+        #.box2, #.display, #.box, #.box2
+        {
+            border-radius: 16px;
+            border-width: 8px;
+        }
+}
