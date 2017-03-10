@@ -123,6 +123,7 @@ function buttonClick() {
 	pokeballs++;
 	greatballbonus();
 	ultraballbonus();
+	masterballbonus();
 	update();
 }
 
