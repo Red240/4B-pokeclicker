@@ -14,23 +14,14 @@ Insert answer here.
 ## Changelog
 
 ### Version 1.1
-
-#### Bug fixes
- * Fixed thing
- * Fixed other thing
-
-#### Changes
- * Added thing
- * Removed thing
- * Added a group of related things:
-   * one
-   * two
-   * three
-   * four
- * If you want to be fancy, you can use a...
-   * + to indicate something added and a...
-   * - to indicate something removed, just be careful with your markdown syntax!
 -->
+### Changes
+ * We made it possible to scroll to buy your pokemon/pokeballs in the pokemon/pokeball shop.
+ * Cookies were added (ability to save data)
+ * Mewto, Leafeon, and masterball, were added as new pokemon/pokeballs to the Pokemon Shop.
+ * We added music to the game.
+
+
 ### Version 1.0
 This is our initial release. We hope you enjoy it! It includes the usual basics of a clicker, a shop, a clicking function, and of course the pokeballs! Use the pokeballs you collect from clicking to buy various amounts of pokemon to help gather you pokeballs! The games pretty short at this point, but soon it'll be bigger, better, and more balanced for an enjoyable game experience!
 
