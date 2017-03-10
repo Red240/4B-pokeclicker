@@ -10,11 +10,11 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
-
+-->
 ## Changelog
 
 ### Version 1.1
--->
+
 ### Changes
  * We made it possible to scroll to buy your pokemon/pokeballs in the pokemon/pokeball shop.
  * Cookies were added (ability to save data)
