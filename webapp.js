@@ -27,7 +27,7 @@ function save_cookies() {
 	document.cookie = "pokeballs=" + pokeballs + "; " + expires;
 	document.cookie = "greatballs=" + greatballs + "; " + expires;
 	document.cookie = "ultraballs=" + ultraballs + "; " + expires;
-	//document.cookie = "masterballs=" + masterballs + "; " + expires;
+	document.cookie = "masterballs=" + masterballs + "; " + expires;
 
 	
 	document.cookie = "bulbasaur=" + bulbasaur + "; " + expires;
@@ -69,6 +69,12 @@ function load_cookies() {
 			case "ultraballs":
 				ultraballs = Number(value);
 				break;
+			case "masterballs":
+				masterballs = Number(value);
+				break;
+			case "bulbasaur":
+				bulbasaur = Number(value);
+				break;
 			case "charmander":
 				charmander = Number(value);
 				break;
@@ -97,15 +103,9 @@ function load_cookies() {
 				Arceus = Number(value);
 				break;
 			
-			
+
 			
 			}
-		
-		/*if(key == "pokeballs") {
-			
-			 pokeballs = Number(value);
-			
-		}*/
 		
 		
 	}
