@@ -256,6 +256,7 @@ function shop(pokemon) {
 				
 			
 	}
+	update();
 }
 
 
