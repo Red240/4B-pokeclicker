@@ -205,7 +205,7 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;
-				case "MewTwo":
+		case "MewTwo":
 			if(pokeballs>4000000) {
 				MewTwo++;
 				pokeballs-=4000000;
@@ -232,7 +232,7 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 			}
 			break;
-			case "Ultraball":
+		case "Ultraball":
 			if(pokeballs>=15000) {
 				ultraballs++;
 				pokeballs-=15000;
@@ -241,7 +241,7 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;
-				case "masterballs":
+		case "masterballs":
 			if(pokeballs>=1500000) {
 				masterballs++;
 				pokeballs-=1500000;
