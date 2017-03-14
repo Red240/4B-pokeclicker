@@ -17,9 +17,16 @@ var Drantini = 0;
 var MewTwo = 0;
 var Arceus = 0;
 
-//COOKIES
+var Ivysaur = 0;
+var Charmeleon =0;
+var Wartortle = 0;
+var Raticate = 0;
+var Nidorian = 0;
 
+//COOKIES
+//This saves the cookies. 
 function save_cookies() {
+	//This creates a experation date 120 days from when the person enters the app.
 	var d = new Date();
 	d.setTime(d.getTime() + (120*24*60*60*1000));
 	var expires = "expires="+ d.toUTCString();
@@ -249,7 +256,25 @@ function shop(pokemon) {
 			else {
 				alert("Please collect more pokeballs.");
 				}
-			break;		
+			break;	
+		case "Ivysaur":
+			if(pokeballs>=100) {
+				Ivysaur++;
+				pokeballs-=100;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
+		case "Charmeleon":
+			if(pokeballs>=1000) {
+				Charmeleon++;
+				pokeballs-=1000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
 		default:
 			alert("Please collect more pokeballs.");
 			break;
@@ -258,6 +283,12 @@ function shop(pokemon) {
 	}
 	update();
 }
+
+
+//EVOLUTIONS
+//when a player buys an evoltion change value of Charmander by a percentage
+// Pokemons wiht Evolutions Bulbasaur(Increase 1000%) Charmander (Increase 750%) Wartortle (500%) Raticate (Increase 200%) Nidorian (150%) Dratini (Increase 100%) Mewtwo (Still thinking :3)
+
 
 
 //This is the setInterval that makes it so that the pokemon add pokeballs over time. It does this by activating the bonus function.
