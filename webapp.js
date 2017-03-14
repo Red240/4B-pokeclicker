@@ -275,6 +275,24 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;	
+		case "Wartortle":
+			if(pokeballs>=25000) {
+				Wartortle++;
+				pokeballs-=25000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
+		case "Raticate":
+			if(pokeballs>=755000) {
+				Raticate++;
+				pokeballs-=755000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
 		default:
 			alert("Please collect more pokeballs.");
 			break;
