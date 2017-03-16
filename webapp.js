@@ -241,7 +241,7 @@ function shop(pokemon) {
 				alert("Please collect more pokeballs.");
 				}
 			break;
-				case "Masterball":
+				case "masterballs":
 			if(pokeballs>=1500000) {
 				masterballs++;
 				pokeballs-=1500000;
@@ -256,6 +256,7 @@ function shop(pokemon) {
 				
 			
 	}
+	update();
 }
 
 
