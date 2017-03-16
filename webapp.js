@@ -1,57 +1,69 @@
 // JavaScript Document
 
 //These are the variables for the number of pokeballs and the pokemon.
-var pokeballs = 0;
-var greatballs = 0;
-var ultraballs = 0;
-var masterballs = 0;
+var pokeballs =  {
+    purchased:0
+    };
+var greatballs =  {
+    purchased:0
+    };
+var ultraballs =  {
+    purchased:0
+    };
+var masterballs =  {
+    purchased:0
+    };
 
 var bulbasaur =  {
     price:10
     bonus:0.2
-    purchased:0
-    }
+    purchased:0 
+	};
 var charmander =  {
     price:100
     bonus:3
     purchased:0
-    }
+    };
 var Squirtle =  {
     price:2500
     bonus:31
     purchased:0
-    }
+    };
 var Pikachu = {
     price:24200
     bonus:320
     purchased:0
-    }
+    };
 var Leafeon = {
     price:45000
     bonus:420
     purchased:0
-    }
+    };
 var Ratatta=  {
     price:75500
     bonus:650
     purchased:0
-    }
+    };
 var Nidoran = {
     price:300000
     bonus:2200
     purchased:0
-    }
+    };
 var Drantini = {
     price:420000
     bonus:4000
     purchased:0
-    }
+    };
 var MewTwo =  {
-    price:300000
-    bonus:2200
+    price:400000
+    bonus:47000
     purchased:0
-    }
-var Arceus = 0;
+    };
+var Arceus =  {
+    price:15000000
+    bonus:250000
+    purchased:0
+    };
 
 var Ivysaur = 0;
 var Charmeleon =0;
