@@ -4,11 +4,13 @@
 var pokeballs = 0;
 var greatballs = 0;
 var ultraballs = 0;
+var masterballs = 0;
 
 var bulbasaur = 0;
 var charmander = 0;
 var Squirtle = 0;
 var Pikachu = 0;
+var Leafeon = 0;
 var Ratatta= 0;
 var Nidoran = 0;
 var Drantini = 0;
@@ -25,10 +27,14 @@ function save_cookies() {
 	document.cookie = "pokeballs=" + pokeballs + "; " + expires;
 	document.cookie = "greatballs=" + greatballs + "; " + expires;
 	document.cookie = "ultraballs=" + ultraballs + "; " + expires;
+	document.cookie = "masterballs=" + masterballs + "; " + expires;
+
+	
 	document.cookie = "bulbasaur=" + bulbasaur + "; " + expires;
 	document.cookie = "charmander=" + charmander + "; " + expires;
 	document.cookie = "Squirtle=" + Squirtle + "; " + expires;
 	document.cookie = "Pikachu=" + Pikachu + "; " + expires;
+	document.cookie = "Leafeon =" + Leafeon  + "; " + expires;
 	document.cookie = "Ratatta=" + Ratatta + "; " + expires;
 	document.cookie = "Nidoran=" + Nidoran + "; " + expires;
 	document.cookie = "Drantini=" + Drantini + "; " + expires;
@@ -45,27 +51,67 @@ function load_cookies() {
 	
 	var str = document.cookie;
 	var mainArray = str.split("; ");
-	var length = mainArray.length;
-	
-	for( var i = 0; i < length; i++) {
+
+	for( var i = 0; i < mainArray.length; i++) {
 		
-		var temArray = split(" ");
+		var tempArray = mainArray[i].split("=");
+		var key = tempArray[0];
+		var value = tempArray[1];
 		
-		var key = temArray[0];
-		var value = temArray[1];
-		
-		if(key == "pokeballs") {
+		switch(key) {
 			
-			var pokeballs = temArray[1];
+			case "pokeballs":
+				pokeballs = Number(value);
+				break;
+			case "greatballs":
+				greatballs = Number(value);
+				break;
+			case "ultraballs":
+				ultraballs = Number(value);
+				break;
+			case "masterballs":
+				masterballs = Number(value);
+				break;
+			case "bulbasaur":
+				bulbasaur = Number(value);
+				break;
+			case "charmander":
+				charmander = Number(value);
+				break;
+			case "Squirtle":
+				Squirtle = Number(value);
+				break;
+			case "Pikachu":
+				Pikachu = Number(value);
+				break;
+			case "Leafeon":
+				Leafeon = Number(value);
+				break;
+			case "Ratatta":
+				Ratatta = Number(value);
+				break;
+			case "Nidoran":
+				Nidoran = Number(value);
+				break;
+			case "Drantini":
+				Drantini = Number(value);
+				break;
+			case "MewTwo":
+				MewTwo = Number(value);
+				break;
+			case "Arceus":
+				Arceus = Number(value);
+				break;
+			
+
 			
 			}
 		
-		}
+		
+	}
 	
-	
+
 }
-
-
 //This function updates the button clicks and the bonus so that the pokeballs are added to the dispaly smoothly.
 function update() {
 	document.getElementById("numberofpokeballs").value = Math.round(10*pokeballs)/10;
@@ -77,6 +123,7 @@ function buttonClick() {
 	pokeballs++;
 	greatballbonus();
 	ultraballbonus();
+	masterballbonus();
 	update();
 }
 
@@ -117,6 +164,15 @@ function shop(pokemon) {
 			if(pokeballs>=24200) {
 				Pikachu++;
 				pokeballs-=24200;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;
+		case "Leafeon":
+			if(pokeballs>=45000) {
+				Leafeon++;
+				pokeballs-=45000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
@@ -184,7 +240,16 @@ function shop(pokemon) {
 			else {
 				alert("Please collect more pokeballs.");
 				}
-			break;	
+			break;
+				case "Masterball":
+			if(pokeballs>=1500000) {
+				masterballs++;
+				pokeballs-=1500000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;		
 		default:
 			alert("Please collect more pokeballs.");
 			break;
@@ -209,6 +274,8 @@ function bonus() {
 		
 		pokeballs+= Pikachu * 320;
 		
+		pokeballs+= Leafeon * 420;
+		
 		pokeballs+= Ratatta * 650;
 		
 		pokeballs+= Nidoran * 2200;
@@ -226,7 +293,7 @@ function bonus() {
 //This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
 	
-	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + ( Ratatta * 650) + (Nidoran * 2200) + (Drantini * 4000) + (MewTwo * 47000) + (Arceus * 250000)] )/10;
+	document.getElementById("numberofclicks").value = Math.round( 10 *[(bulbasaur * 0.2) + (charmander * 3) + (Squirtle * 31) + (Pikachu * 320) + (Leafeon * 420) + ( Ratatta * 650) + (Nidoran * 2200) + (Drantini * 4000) + (MewTwo * 47000) + (Arceus * 250000)] )/10;
 	
 }
 
@@ -238,4 +305,7 @@ function greatballbonus () {
 	}
 function ultraballbonus () {
 	pokeballs+= ultraballs*100;
+}
+function masterballbonus () {
+	pokeballs+= masterballs*5000;
 }
