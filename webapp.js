@@ -21,8 +21,10 @@ var Ivysaur = 0;
 var Charmeleon =0;
 var Wartortle = 0;
 var Raticate = 0;
-var Nidorian = 0;
+var Nidorino = 0;
+var Dragonair = 0; 
 
+window.onload=load_cookies;
 //COOKIES
 //This saves the cookies. 
 function save_cookies() {
@@ -132,6 +134,7 @@ function buttonClick() {
 	ultraballbonus();
 	masterballbonus();
 	update();
+	save_cookies();
 }
 
 
@@ -258,36 +261,54 @@ function shop(pokemon) {
 				}
 			break;	
 		case "Ivysaur":
-			if(pokeballs>=100) {
+			if(pokeballs>=10000) {
 				Ivysaur++;
-				pokeballs-=100;
+				pokeballs-=10000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;	
 		case "Charmeleon":
-			if(pokeballs>=1000) {
+			if(pokeballs>=100000) {
 				Charmeleon++;
-				pokeballs-=1000;
+				pokeballs-=100000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;	
 		case "Wartortle":
-			if(pokeballs>=25000) {
+			if(pokeballs>=600000) {
 				Wartortle++;
-				pokeballs-=25000;
+				pokeballs-=600000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
 				}
 			break;	
 		case "Raticate":
-			if(pokeballs>=755000) {
+			if(pokeballs>=500000) {
 				Raticate++;
-				pokeballs-=755000;
+				pokeballs-=500000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
+		case "Nidorino":
+			if(pokeballs>=1000000) {
+				Nidorino++;
+				pokeballs-=1000000;
+			}
+			else {
+				alert("Please collect more pokeballs.");
+				}
+			break;	
+		case "Dragonair":
+			if(pokeballs>=2500000) {
+				Dragonair++;
+				pokeballs-=2500000;
 			}
 			else {
 				alert("Please collect more pokeballs.");
@@ -300,12 +321,13 @@ function shop(pokemon) {
 			
 	}
 	update();
+	save_cookies();
 }
 
 
 //EVOLUTIONS
 //when a player buys an evoltion change value of Charmander by a percentage
-// Pokemons wiht Evolutions Bulbasaur(Increase 1000%) Charmander (Increase 750%) Wartortle (500%) Raticate (Increase 200%) Nidorian (150%) Dratini (Increase 100%) Mewtwo (Still thinking :3)
+// Pokemons wiht Evolutions Bulbasaur(Increase 1000%) Charmander (Increase 750%) Wartortle (500%) Raticate (Increase 200%) Nidorian (150%) Dratini (Increase 150%) Mewtwo (Still thinking :3)
 
 
 
@@ -313,9 +335,18 @@ function shop(pokemon) {
 	setInterval(bonus,1000);
 
 	
-//This function is the bonus function that controlls how many pokeballs you get per second base on the number of pokemon you have.
+//This function is the bonus function that controlls how many pokeballs you get per second based on the number of pokemon you have.
 function bonus() {
 	
+		/*switch(pokemon) {
+			
+			case "Ivysaur": 
+				if(Ivysaur>=1) {
+					
+					var clickspersecondb = 0.2
+					
+					}*/
+				
 		pokeballs+= bulbasaur * 0.2;
 	
 		pokeballs+= charmander * 3;
@@ -339,6 +370,7 @@ function bonus() {
 		update();
 		
 		clickspersecond();
+		save_cookies();
 }
 //This is the clicks per second function. This tells you how many clicks per second you get with your pokemon.
 function clickspersecond() {
