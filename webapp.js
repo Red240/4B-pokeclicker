@@ -6,24 +6,51 @@ var greatballs = 0;
 var ultraballs = 0;
 var masterballs = 0;
 
-var bulbasaur = 0;/*{
-	
-purchased:0
-bonus:0.2
-	
-	}*/
-var charmander = 0;/*{
-	purchased:0
-	bonus:3
-	
-	}*/
-var Squirtle = 0;
-var Pikachu = 0;
-var Leafeon = 0;
-var Ratatta= 0;
-var Nidoran = 0;
-var Drantini = 0;
-var MewTwo = 0;
+var bulbasaur =  {
+    price:10
+    bonus:0.2
+    purchased:0
+    }
+var charmander =  {
+    price:100
+    bonus:3
+    purchased:0
+    }
+var Squirtle =  {
+    price:2500
+    bonus:31
+    purchased:0
+    }
+var Pikachu = {
+    price:24200
+    bonus:320
+    purchased:0
+    }
+var Leafeon = {
+    price:45000
+    bonus:420
+    purchased:0
+    }
+var Ratatta=  {
+    price:75500
+    bonus:650
+    purchased:0
+    }
+var Nidoran = {
+    price:300000
+    bonus:2200
+    purchased:0
+    }
+var Drantini = {
+    price:420000
+    bonus:4000
+    purchased:0
+    }
+var MewTwo =  {
+    price:300000
+    bonus:2200
+    purchased:0
+    }
 var Arceus = 0;
 
 var Ivysaur = 0;
