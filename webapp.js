@@ -6,8 +6,17 @@ var greatballs = 0;
 var ultraballs = 0;
 var masterballs = 0;
 
-var bulbasaur = 0;
-var charmander = 0;
+var bulbasaur = 0;/*{
+	
+purchased:0
+bonus:0.2
+	
+	}*/
+var charmander = 0;/*{
+	purchased:0
+	bonus:3
+	
+	}*/
 var Squirtle = 0;
 var Pikachu = 0;
 var Leafeon = 0;
