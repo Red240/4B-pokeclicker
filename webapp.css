@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+#d {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
 
+<<<<<<< HEAD
 #d {
 	margin-bottom: 5px;
 	margin-right: 5px;
@@ -11,6 +16,12 @@
 margin-left:5px;
 }
 
+=======
+#d:active {
+    margin-top: 10px;
+margin-left:10px;
+}
+>>>>>>> origin/CSS
 .box{
 	height: 360px;
 	width: 250px;
@@ -18,14 +29,9 @@ margin-left:5px;
 	position: relative;
 	top: 0px;
 	left: 0%;
+	
 }
 .box1{
-	width: 250px;
-<<<<<<< HEAD
-	height: 800px;
-=======
-	height: 900px;
->>>>>>> Version-1.1
 	background-color:#007DE8;
 	position: fixed;
 	top: 0px;
@@ -59,151 +65,4 @@ button {
 #menu
 {
 border-left: 1px solid black;
-height: 100%;
-}
-
-@media only screen
-and (min-device-width: 500px)
-and (max-device-width:1080)  {
-}
-
-@media screen and (max-width:980px){
-
-#wrapper{
-width:94%;
-
-}
-
-#content{
-width:65%;
-
-}
-
-#sidebar{
-width:30%;
-
-}
-
-}
-
-@media screen and (max-width:700px){
-	#content, #sidebar {
-		width:auto;
-		float:none;
-	}
-
-#header {
-	height:auto;
-	}
-
-}
-
-
-@media screen and (max-width:480px){
-	#header {
-		height:auto;
-	}
-	h1 {
-	font-size:24px;
-}
-
-#sidebar{
-	float:none;
-}
-
-}
-
-
-/* phones */
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width:568px)  {
-	
-	body{
-		font-size:40px;
-	}
-	
-	#header {
-		height:auto;
-	}
-	
-#content {
-	width:auto;
-	}
-
-#sidebar {
-	width:auto;
-	clear:both;
-	}
-
-#header, #sidebar, #content, #footer {
-	border-radius:16px;
-border-width:8px;
-	}
-}
-	
-@media screen and (max-width : 980px ){
-    #.box {
-        width: 94%;
-    }
-    #.display {
-        width: 75%;
-    }
-    #.pokeball {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #.box1, #.pokemon {
-        width: auto;
-        float: none;
-}
-    #.box2 {
-        height: auto;
-    }
-}
-@media screen and (max-width: 480px)
-{    
-    #.audio
-    {    
-        height: auto;
-    }    
-    h1
-    {
-        font-size: 24px;
-    }
-    #.box
-    {
-        float: none;
-    }
-}
-/* Phones */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-{
-        body  
-        {
-                font-size: 40px;
-        }
-        #.display
-        {
-            height: auto;
-        }
-        #.box1
-        {
-            width:auto;
-        }
-        #.pokemon
-        {
-            width: auto;
-            clear: both;
-        }
-        #.box2, #.display, #.box, #.box2
-        {
-            border-radius: 16px;
-            border-width: 8px;
-        }
-}
+height: 100
