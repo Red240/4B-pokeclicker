@@ -388,15 +388,25 @@ function clickspersecond() {
 	
 }
 
+
 //OTHER TYPES OF POKEBALLS
 
+setInterval(perclickbonus,1000);
 //This function adds three to the number of poke balls you make when you click. For example when you click the pokeball you will only get 1 pokeball per click. With a single great ball though, it will bring your clicks on the pokeball to 4 per click becuase it adds 3.
-function greatballbonus () {
+function perclickbonus() {
+
 	pokeballs+= greatballs*3;
-	}
-function ultraballbonus () {
+	
 	pokeballs+= ultraballs*100;
-}
-function masterballbonus () {
+
 	pokeballs+= masterballs*5000;
+	
+	update();
+		
+	pokeballsperclick();
+	save_cookies();
+}
+function pokeballsperclick() {
+	document.getElementById("pokeballsperclick").value = 1+ Math.round( 10 *[(greatballs * 3) + (ultraballs * 100) + (masterballs * 5000) ] )/10;
+
 }
